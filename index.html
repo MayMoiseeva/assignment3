@@ -11,18 +11,20 @@
 		table, th, td {
 			border: 2px solid turquoise;
 			border-collapse: collapse;
-			background-color: #000099;
 			font-family: "Elegant Typewriter", serif;
 			font-size: large;
 		}
 		th, td {
 			padding: 11px;
 			color: white;
+			background-color: #000099;
 		}
 	</style>
 </head>
 <body>
 	<h2>This is a general overview of my usual weekly schedule</h2>
+	<button onclick="document.getElementById('exist').style.backgroundColor='black'">Highlight existential stuff</button>
+	<button onclick="document.getElementById('exist').style.backgroundColor='#000099' ">Go back</button>
 	<table>
 		<caption><b>Weekly Schedule</b></caption>
 		<tr>
@@ -69,7 +71,7 @@
 			<td>16:00-17:15</td>
 			<td></td>
 			<td rowspan="2">Baking cookies for all <br> my roommates</td>
-			<td rowspan="3">Meditating on the <br> inevitability of death <br> and consumption of the <br> Universe by enthropy</td>
+			<td id="exist" rowspan="3">Meditating on the <br> inevitability of death <br> and consumption of the <br> Universe by enthropy</td>
 			<td></td>
 			<td></td>
 		</tr>
